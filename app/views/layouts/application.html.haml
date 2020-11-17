@@ -1,0 +1,20 @@
+!!! 5
+%html
+%head
+  %title Recipe App
+  = csrf_meta_tags
+  = csp_meta_tag
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+%body
+  %nav.nav-wrapper
+    .container
+      .brand-logo.center= link_to "Recipe Box", root_path
+
+      %nav.nav-wrapper
+        .right.hide-on-med-and-down= link_to "Recipe", new_recipe_path
+        .left.hide-on-med-and-down= link_to "Sign Out", root_path
+
+  = yield
+
