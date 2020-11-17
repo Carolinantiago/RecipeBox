@@ -16,5 +16,9 @@
         .right.hide-on-med-and-down= link_to "Recipe", new_recipe_path
         .left.hide-on-med-and-down= link_to "Sign Out", root_path
 
-  = yield
+  .container
+    - flash.each do |name, msg|
+      =content_tag :div, msg, class: "alert"
+    
+    = yield
 
