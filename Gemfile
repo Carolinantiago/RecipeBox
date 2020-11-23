@@ -27,6 +27,7 @@ gem 'materialize-sass'
 gem 'paperclip'
 gem 'cocoon'
 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
