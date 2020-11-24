@@ -61,4 +61,7 @@ Rails.application.configure do
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   Paperclip.options[:command_path] = "C:/Program Files/ImageMagick-7.0.10-Q16-HDRI/"
+
+  #Needed for devise
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

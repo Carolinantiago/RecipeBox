@@ -26,6 +26,7 @@ gem 'simple_form'
 gem 'materialize-sass'
 gem 'paperclip'
 gem 'cocoon'
+gem 'devise'
 
 
 # Use Active Storage variant
